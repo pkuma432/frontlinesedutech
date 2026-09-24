@@ -1,0 +1,12 @@
+Ansible Automation Platform (AAP) with Splunk:
+​Key Steps for Splunk Log Aggregation Setup
+​Navigation
+​Go to Settings in the Ansible Automation Platform UI.
+​Under Automation Execution, select Logging.
+​Configuration
+​Aggregator Details: Enter the Splunk logging aggregator endpoint/details provided by the Splunk team.
+​Authentication: Input the encrypted logging aggregator token or password obtained from Splunk.
+​Activation & Functionality
+​Enable External Logging: Toggle Enable External Logging to ON to initiate the log stream.
+​Log Forwarding: Once enabled, AAP automatically forwards all platform logs to Splunk continuously.
+​Maintenance: This is a one-time configuration; no manual daily intervention is required once active.
