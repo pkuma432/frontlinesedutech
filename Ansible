@@ -10,3 +10,18 @@ Ansible Automation Platform (AAP) with Splunk:
 ​Enable External Logging: Toggle Enable External Logging to ON to initiate the log stream.
 ​Log Forwarding: Once enabled, AAP automatically forwards all platform logs to Splunk continuously.
 ​Maintenance: This is a one-time configuration; no manual daily intervention is required once active.
+
+
+
+
+
+
+Access Control & Permissions for Splunk Integration Settings
+Role-Based Access Control (RBAC)
+Permissions in Ansible Automation Platform (AAP) are strictly tied to specific roles, groups, and user privilege levels.
+Super User vs. Standard Administrator Privileges
+Super User (admin): Has full privileges across AAP, including the exclusive ability to view, configure, or modify external logging settings (Splunk integration) under Settings > Automation Execution > Logging.
+Standard Administrator (e.g., Dikshita): Even when assigned to the Administrator group, regular administrators do not see the Logging option under Automation Execution, restricting them from modifying logging configurations.
+Granular Privilege Distribution
+Access scales down strictly across user roles: Super User \rightarrow Administrator \rightarrow Auditor \rightarrow Developer / Operator.
+Non-super users are locked out from sensitive system-wide settings like Splunk log forwarding to ensure security and prevent unauthorized changes.
